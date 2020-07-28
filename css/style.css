@@ -929,6 +929,10 @@ a.leran-more:hover{
 	
 }
 @media (max-width:1024px){
+	.fa{
+		font-size: 34pt !important;
+		margin-left: -20px;
+	}
 	.expertise1{
 		display: none;
 	}
@@ -1161,6 +1165,10 @@ a.leran-more:hover{
 	}
 }
 @media (max-width:480px){
+	.fa{
+		font-size: 26pt !important;
+		margin-left: -14px;
+	}
 	.expertise1{
 		display: none;
 	}
@@ -1296,6 +1304,14 @@ a.leran-more:hover{
 	}
 }
 @media (max-width:320px){
+	.portfolio-top-right{
+		min-height:60vw;
+		background:url(../images/port-right-divice2.png) no-repeat 0px -50px;
+		background-size:cover;
+	}
+	.fa{
+		font-size: 26pt !important;
+	}
 	.expertise1{
 		display: none;
 	}
