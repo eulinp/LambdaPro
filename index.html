@@ -1,0 +1,481 @@
+<!--
+Author: Eulin Palma
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>LambdaPro</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		 <!---- animated-css ---->
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.flip.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+		<!---- animated-css ---->
+		  <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href='css/all.css' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+
+
+			$(function() {
+  
+				// elementos de la lista
+				var menues = $("nav ul li"); 
+
+				// manejador de click sobre todos los elementos
+				menues.click(function() {
+					// eliminamos active de todos los elementos
+					menues.removeClass("active");
+					// activamos el elemento clicado.
+					$(this).addClass("active");
+				});
+
+				});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<div class="bg">
+		<!----- start-header---->
+			<div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<img src="images/lambdapro-claro-fondo-transparente.png" width="250px" title="dreams" />
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Inicio</a></li>
+								<li><a href="#services" class="scroll">Servicios</a></li>
+								<li><a href="#port" class="scroll">Portfolio</a></li>
+								<li><a href="#team" class="scroll">Equipo</a></li>
+								<li><a href="#contact" class="scroll">Contacto</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!---- banner ---->
+			<div class="banner wow fadeIn" data-wow-delay="0.5s">
+				<div class="container">
+					<div class="banner-info text-center">
+						<h1>Nuestra misión es tu visión</h1><br />
+						<span> </span>
+						<p>Somos una empresa digital que presta diferentes servicios a nuestros clientes con el fin de que tengan precencia en internet</p>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!---- banner ---->
+			<!--- services --->
+			<div id="services" class="services">
+				<div class="container">
+					<div class="service-head text-center">
+						<h2>Servicios Principales</h2>
+						<span> </span>
+					</div>
+					<!--- services-grids --->
+					<div class="services-grids text-center">
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+								<i class="fa fa-paint-brush fa-3x"></i>
+								<h3><a href="#">Hermosos Diseños</a></h3>
+								<p>Nuestros clientes dan sus ideas y nuestro equipo se encarga de proyectarla en la web, buscando siempre representar lo que el cliente desea.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+								<i class="fa fa-laptop-code fa-3x"></i>
+								<h3><a href="#">Desarrollo Web</a></h3>
+								<p>Desarrollamos páginas web a la medida, según las necesidades de cada empresa, siempre en busca de la mejor optimización.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+								<i class="fa fa-hands-helping fa-3x"></i>
+								<h3><a href="#">Consultoría</a></h3>
+								<p>Te ayudamos a encaminar y proyectar lo que quieres para tu empresa o marca personal.</p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!--- services-grids --->
+				</div>
+			</div>
+			<!--- services --->
+			<div class="clearfix"> </div>
+			<!--- Other Expertise ---->
+			<div class="expertise1"></div>
+			<div id="" class="expertise">
+				
+				<div class="expertice-grids">
+					<div class="expertice-left-grid wow fadeInLeft" data-wow-delay="0.4s">
+						<div class="expertise-head">
+							<h3 class="other-expertise text-center">Otras Experiencias</h3>
+							<span> </span>
+							<p class="text-center">Ofrecemos diferentes tipos servicios, orientados a ayudar a que tu empresa surja en el mundo digital.</p>
+						</div>
+						<div class="expertise-left-inner-grids">
+							<div class="e-left-inner-grid">
+								<div class="e-left-inner-grid-left">
+									<i class="fa fa-code fa-3x"></i>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>Desarollo Personalizado</h4>
+									<p>Nuestra empresa es desarrolladora de sitios web a la medida y vanguardista, creando diseños 100% personalizados, que van orientados a los deseos y necesidades de nuestros clientes. Si no encuentras lo que buscas, lo creamos desde cero con programación.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="e-left-inner-grid">
+								<div class="e-left-inner-grid-left">
+									<i class="fa fa-thumbs-up fa-3x"></i>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>Comunity Manager</h4>
+									<p>Manejamos y optimizamos tus redes sociales, acompañándote en toda la trayectoria y aplicando un proceso transparente y profesional, apoyándote con las metodologías necesarias que ayudan a llevar a tu empresa a donde deseas.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="e-left-inner-grid">
+								<div class="e-left-inner-grid-left">
+									<i class="fa fa-mobile-alt fa-3x"></i>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>Desarrollo de Apps</h4>
+									<p>Desarrollo de Aplicaciones Móviles para Celulares y Tablets. Híbridas y WebApp. Android e IOS.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="e-left-inner-grid">
+								<div class="e-left-inner-grid-left">
+									<i class="fa fa-palette fa-3x"></i>
+								</div>
+								<div class="e-left-inner-grid-right">
+									<h4>Imagen Corporativa</h4>
+									<p>Saber cómo crear la imagen corporativa es determinante para el éxito de las marcas. ¿Necesitas algunos consejos para guiar tu estrategia empresarial?.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					
+					<div class="clearfix"> </div> 
+				</div>
+			</div>
+			<!--- Other Expertise ---->
+			<div id="services" class="services">
+				<div class="container">
+					<div class="service-head text-center">
+						<h2>Proyecto en proceso</h2>
+						<span> </span>
+						<div class="responsive-video">
+							<iframe src="images/mvtrading.mp4" poster="images/lambdapro-claro-fondo-transparente.png" allowfullscreen controls>
+							</iframe>
+						</div>						   
+						
+					</div>
+					
+				</div>
+			</div>
+			<!--- portfolio ---->
+			<div id="port" class="portfolio">
+				<div class="portfolio-top">
+					<div class="col-md-8">
+						<div class="portfolio-top-left wow fadeInLeft" data-wow-delay="0.4s">
+							<h3>Nuestro Portafolio</h3>
+							<p>Consigue transmitir una buena imagen de tu empresa y ten una página web totalmente autoadministrable para que no dependas de nadie.</p>
+							<p>Estas son algunas de las páginas que nacieron de simples ideas y hoy en día, son una realidad.</p>
+							
+							<div class="portfolio-top-left-grids">
+								<div class="portfolio-top-left-grid">
+									<div class="portfolio-top-left-grid-left">
+										<i class="fa fa-lightbulb fa-3x"></i>
+									</div>
+									<div class="portfolio-top-left-grid-right">
+										<h5>Dinos tus ideas</h5>
+										<p>Somos una empresa que te escucha y da orientación para que tengas una  visión clara, simple y estructurada de las acciones que necesitamos para desarrollar tu idea y crear así una propuesta de valor innovadora y cool. </p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="portfolio-top-left-grid">
+									<div class="portfolio-top-left-grid-left">
+										<i class="fa fa-cogs fa-3x"></i>
+									</div>
+									<div class="portfolio-top-left-grid-right">
+										<h5>Nos ponemos manos a la obra</h5>
+										<p>Hacemos un estudio del caso y buscamos la mejor solución que se adapte a las necesidades de su proyecto. </p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="portfolio-top-left-grid">
+									<div class="portfolio-top-left-grid-left">
+										<i class="fa fa-laptop fa-3x"></i>
+									</div>
+									<div class="portfolio-top-left-grid-right">
+										<h5>Desarrollamos tu sitio</h5>
+										<p>Desarrollamos tu sitio web a medida según las necesidades que se requieran, en base a los principios de usabilidad, diseño y experiencia de usuario. </p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="portfolio-top-left-grid">
+									<div class="portfolio-top-left-grid-left">
+										<i class="fa fa-glass-cheers fa-3x"></i>
+									</div>
+									<div class="portfolio-top-left-grid-right">
+										<h5>Celebramos tu éxito</h5>
+										<p>Lo más importante para nosotros, es que te sientas feliz por el proyecto que estás emprendiendo. </p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 portfolio-top-right-inner wow fadeInRight" data-wow-delay="0.4s">
+						<div class="portfolio-top-right">
+							
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+					
+					<!---- portfolio-works ---->
+					<div class="portfolio-works">
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="card">
+								<div class="portfolio-work-grid-pic front">
+									<img src="images/portafolio-1-2.png" title="YouCapFit" />
+								</div>
+
+								<div class="portfolio-work-grid-pic back">
+									<img src="images/portafolio-1.png" title="YouCapFit" />
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="card2">
+								<div class="portfolio-work-grid-pic front">
+									<img src="images/portafolio-2-1.png" title="Libreria Kerygma" />
+								</div>
+
+								<div class="portfolio-work-grid-pic back">
+									<img src="images/portafolio-2.png" title="Libreria Kerygma" />
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="card3">
+								<div class="portfolio-work-grid-pic front">
+									<img src="images/portafolio-3-1.png" title="OnceOnce" />
+								</div>
+
+								<div class="portfolio-work-grid-pic back">
+									<img src="images/portafolio-3.png" title="OnceOnce" />
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="card">
+								<div class="portfolio-work-grid-pic front">
+									<img src="images/portafolio-4-1.png" title="SamapShop" />
+								</div>
+
+								<div class="portfolio-work-grid-pic back">
+									<img src="images/portafolio-4.png" title="SamapShop" />
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="card">
+								<div class="portfolio-work-grid-pic">
+									<img src="images/lambdapro-claro-fondo-transparente.png" title="LambdaPro" />
+								</div>
+
+								
+							</div>
+							
+						</div>
+						<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+							<div class="card3">
+								<div class="portfolio-work-grid-pic front">
+									<img src="images/portafolio-5-1.png" title="Vedett" />
+								</div>
+
+								<div class="portfolio-work-grid-pic back">
+									<img src="images/portafolio-5.png" title="Vedett" />
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!---- portfolio-works ---->
+				</div>
+			</div>
+			<!--- portfolio ---->
+			<!---- about ---->
+			<!---start-about---->
+	
+			<!---- team --->
+			<div id="team" class="team-members">
+					<div class="wrap"> 
+						<div class="tm-head">
+							<h3>Conoce a la Familia</h3>
+							<p>Nuestro excelente equipo de trabajo</p>
+						</div>
+						<div class="tm-head-grids">
+							<div class="tm-head-grid wow fadeInLeft" data-wow-delay="0.4s">
+								<img src="images/eulin.jpg" width="150px" alt="">
+								<h4>Eulin Palma</h4>
+								<h5>Desarrollador</h5>
+							</div>
+							<div class="tm-head-grid wow fadeInUp" data-wow-delay="0.4s">
+								<img src="images/rosangela.jpg" width="150px" alt="">
+								<h4>Rosangela Matute</h4>
+								<h5>Comunity Manager / Diseñadora</h5>
+							</div>
+							<div class="tm-head-grid wow fadeInRight" data-wow-delay="0.4s">
+								<img src="images/edwin.jpg" width="150px" alt="">
+								<h4>Edwin Castellano</h4>
+								<h5>Diseñador / Maquetador</h5>
+							</div>
+
+							
+							<div class="clearfix"> </div>
+						</div>
+
+						<div class="tm-head-grids">
+							<div class="tm-head-grid wow fadeInLeft" data-wow-delay="0.4s">
+								<img src="images/alejandro.jpg" width="150px" alt="">
+								<h4>Alejandro Rea</h4>
+								<h5>Desarrollador / Programador</h5>
+							</div>
+							<div class="tm-head-grid wow fadeInUp" data-wow-delay="0.4s">
+								<img src="images/gleuder.jpg" width="150px" alt="">
+								<h4>Gleuder Molina</h4>
+								<h5>Diseñador Gráfico</h5>
+							</div>
+							<div class="tm-head-grid wow fadeInRight" data-wow-delay="0.4s">
+								<img src="images/luis.jpg" width="150px" alt="">
+								<h4>Luis Peña</h4>
+								<h5>Programador</h5>
+							</div>
+
+							
+							<div class="clearfix"> </div>
+						</div>
+						<p class="team-info">Estamos deseosos de ser parte de tus proyectos. <br> Capacitados y listos para afrontar nuevos retos.</p>
+					</div>
+				</div>
+			<!---- team --->
+			<!---- contact --->
+			<div id="contact" class="contact">
+				<div class="container">
+				<div class="contact-grids">
+					<div class="col-md-12">
+						<div class="contact-left wow fadeInRight" data-wow-delay="0.4s">
+							<h3>Contactanos</h3>
+							<label>¡No seas tímido, envíanos un correo electrónico y saluda! Somos un grupo muy agradable de personas :)</label>
+							<div class="contact-left-grids">
+								<div class="col-md-6">
+									<div class="contact-left-grid">
+										<p><span class="c-mobi"> </span><a target="_blank" href="https://wa.me/+584128850928">+58 412 885 0928</a></p>
+										<p><span class="c-msg"> </span><a href="mailto:lambdaprocompany@gmail.com">lambdaprocompany@gmail.com</a></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="contact-right-grid">
+										
+										<p><span class="c-face"> </span><a href="https://www.facebook.com/LambdaPro-112243317207663/">facebook.com/lambdapro</a></p>
+										<p><span class="c-pin"> </span><a href="https://www.instagram.com/lambdapro/">instagram.com/lambdapro</a></p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="clearfix"> </div>
+				</div>
+				<!--- copy-right ---->
+				<div class="copy-right text-center">
+					<p>© 2020 <a href="https://www.facebook.com/LambdaPro-112243317207663/">LambdaPro</a> Todos los derechos reservados. </p>
+					<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+
+									$ ( ".card" ). flip ({ 
+									axis : 'y' , 
+									trigger : 'hover' });  
+
+									$ ( ".card2" ). flip ({ 
+									axis : 'x' , 
+									trigger : 'hover' }); 
+
+									$ ( ".card3" ). flip ({ 
+									axis : 'y' , 
+									trigger : 'hover',
+									reverse : true }); 
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+				<!--- copy-right ---->
+			</div>
+			</div>
+			<!---- contact --->
+		</div>
+	</body>
+</html>
+
