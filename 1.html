@@ -59,17 +59,11 @@
 .flipper:hover .back {
   transform: rotateY(0deg);
 }
-/* Toggle - Moviles */
-.flip-container.hover .front {
-  transform: rotateY(180deg);
-}
-.flip-container.hover .back {
-  transform: rotateY(0deg);
-}
+
 </style>
 
 <div class="flip-container">
-    <div class="flipper">
+    <div class="flipper" ontouchstart="this.classList.toggle('flipper');">
    
       <!-- Front -->  
       <div class="front">
