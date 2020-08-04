@@ -5,6 +5,31 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
+
+.phone, .mail, .face, .inst {
+	color: white;
+	position: relative;
+	-webkit-animation-name: efecto; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+	animation-name: efecto;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+  }
+  
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes efecto {
+
+	50%  {text-shadow: 3px 3px 6px #05b8ff; color: #05b8ff;}
+	
+
+  }
+  
+  /* Standard syntax */
+  @keyframes efecto {
+	50%  {text-shadow: 3px 3px 6px #05b8ff; color: #05b8ff;}
+  }
+
 .flip-container {
 	perspective: 1000;
 	border: 1px solid #d9d9d9;
@@ -188,6 +213,7 @@ nav a {
 nav a:hover{
 	text-decoration:none;
 	color:#00A2C1;
+	text-shadow: 3px 3px 6px #05b8ff;
 }
 nav a#pull {
 	display: none;
