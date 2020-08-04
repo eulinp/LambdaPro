@@ -1,3 +1,0 @@
-[0726/095728.837:ERROR:process_info.cc(375)] NtQuerySystemInformation SystemExtendedHandleInformation: {No hay cuota suficiente} No hay suficiente memoria virtual o cuota de archivos de paginación para completar la operación especificada. (0xc0000017)
-[0726/102311.204:ERROR:process_reader_win.cc(90)] NtQuerySystemInformation: {No hay cuota suficiente} No hay suficiente memoria virtual o cuota de archivos de paginación para completar la operación especificada. (0xc0000017)
-[0726/102311.211:ERROR:exception_snapshot_win.cc(98)] thread ID 2128 not found in process
