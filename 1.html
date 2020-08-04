@@ -1,0 +1,102 @@
+
+<style>
+    /* Asignamos perspectiva a nuestro contenedor */
+.flip-container {
+  perspective: 1000;
+  border: 1px solid #d9d9d9;
+  /* Para Firefox - IE10+ debemos agregar propiedades extras */
+  -moz-transform-style: preserve-3d;
+  -moz-transform: perspective(1000px);
+  -ms-transform-style: preserve-3d;
+  -ms-transform: perspective(1000px);
+}
+
+.flip-container{
+  width: 100%;
+}
+ 
+.front, .back {
+  width: 280px;
+  height: 320px;
+}
+ 
+/* preserve-3d: Indicamos que todo elemento hijo del div flipper estara en un espacio 3D XYZ  */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+ 
+.front, .back {
+  /* Backface: Nos permite ocultar la parte posterior de los elementos html */
+  /* en este caso FRONT - BACK */
+  backface-visibility: hidden;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+
+
+ 
+/* FRONT: eje Y = 0   */
+.front {
+  position: absolute;
+  transform: rotateY(0deg);
+  background: #bcea67;
+}
+ 
+/* BACK: eje Y = -180, se mantendra oculto */
+.back {
+  transform: rotateY(-180deg);
+  background: #ffdd54;
+}
+
+
+
+/* Hover */
+.flipper:hover .front {
+  transform: rotateY(180deg);
+}
+.flipper:hover .back {
+  transform: rotateY(0deg);
+}
+/* Toggle - Moviles */
+.flip-container.hover .front {
+  transform: rotateY(180deg);
+}
+.flip-container.hover .back {
+  transform: rotateY(0deg);
+}
+</style>
+
+<div class="flip-container">
+    <div class="flipper">
+   
+      <!-- Front -->  
+      <div class="front">
+          <span>Front</span>   
+      </div>
+
+      <!-- BACK -->  
+      <div class="back">
+        <span>Back</span>
+      </div>
+   
+    </div>
+
+    <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+    <div class="flipper">
+   
+      <!-- Front -->  
+      <div class="front">
+          <span>Front2</span>   
+      </div>
+   
+      <!-- BACK -->  
+      <div class="back">
+        <span>Back2</span>
+      </div>
+   
+    </div>
+  </div>
