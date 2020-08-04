@@ -12,6 +12,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	-webkit-animation-name: efecto; /* Safari 4.0 - 8.0 */
 	-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
 	-webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+	-moz-animation-name: efecto; /* Firefox */
+	-moz-animation-duration: 2s; /* Firefox */
+	-moz-animation-iteration-count: infinite; /* Firefox */
+	-o-animation-name: efecto; /* opera */
+	-o-animation-duration: 2s; /* opera */
+	-o-animation-iteration-count: infinite; /* opera */
 	animation-name: efecto;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
@@ -37,7 +43,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	-moz-transform-style: preserve-3d;
 	-moz-transform: perspective(1000px);
 	-ms-transform-style: preserve-3d;
-	-ms-transform: perspective(1000px);
+	-ms-transform: perspective(1000px);-o-
   }
   
   .flip-container{
