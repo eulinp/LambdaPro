@@ -5,7 +5,6 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
-
 .phone, .mail, .face, .inst {
 	color: white;
 	position: relative;
@@ -1054,6 +1053,7 @@ a.leran-more:hover{
 	.container{
 		width:100%;
 	}
+	
 	.portfolio-work-grid-caption {
 		padding: 2.4em 1em 0em 1em;
 	}
@@ -1172,7 +1172,7 @@ a.leran-more:hover{
 		padding: 3em 0 0;
 	}
 	.contact-left h3 {
-		font-size: 2.5em;
+		font-size: 1.5em;
 	}
 	.contact-left{
 		margin:0 0 1em 0;
@@ -1271,7 +1271,7 @@ a.leran-more:hover{
 		padding: 3em 0 0;
 	}
 	.contact-left h3 {
-		font-size: 2.5em;
+		font-size: 1.7em;
 	}
 	.contact-left{
 		margin:0 0 1em 0;
@@ -1374,7 +1374,7 @@ a.leran-more:hover{
 		padding: 3em 0 0;
 	}
 	.contact-left h3 {
-		font-size: 2.2em;
+		font-size: 1.6em;
 	}
 	.contact-left{
 		margin:0 0 1em 0;
@@ -1414,6 +1414,12 @@ a.leran-more:hover{
 		padding: 0.7em 0em;
 		width: 100%;
 		outline:none;
+	}
+	.contact-right-grid p, .contact-right-grid p a {
+		font-size: 10pt;
+	}
+	.contact-left-grid p, .contact-left-grid p a {
+		font-size: 10pt;
 	}
 }
 @media (max-width:320px){
@@ -1579,10 +1585,10 @@ a.leran-more:hover{
 		margin: 0 auto;
 	}
 	.contact-right-grid p, .contact-right-grid p a {
-		font-size: 1em;
+		font-size: 9pt;
 	}
 	.contact-left-grid p, .contact-left-grid p a {
-		font-size: 1em;
+		font-size: 9pt;
 	}
 	.contact-left label {
 		font-size: 0.875em;
